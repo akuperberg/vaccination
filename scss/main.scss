@@ -1,0 +1,185 @@
+@use 'components.scss' as *;
+//Hero image sekce
+.hero-image {
+    height: 700px;
+    background-image: linear-gradient( to right bottom, rgba($cover-green, 0.66), rgba($cover-green, 0.66)), url(../images/ockovani.png);
+    background-color: rgba($cover-green, 0.66);
+    @media only screen and (max-width: 576px) {
+        background-image: linear-gradient( to right bottom, rgba($cover-green, 0.66), rgba($cover-green, 0.66)), url(../images/ockovani-mob.png);
+        background-repeat: no-repeat;
+        height: 400px;
+        background-size: cover;
+    }
+    .hero-image-text {
+        color: $white;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 94.85px;
+        z-index: 12;
+        @media only screen and (max-width: 576px) {
+            font-size: 38px;
+            line-height: 56.32px;
+        }
+        .udelejme-tecku {
+            display: block;
+        }
+        .za-pandemii {
+            display: block;
+            position: relative;
+        }
+    }
+    .ellipse-yellow {
+        background-color: $yellow;
+        height: 190px;
+        width: 190px;
+        border-radius: 50%;
+        position: absolute;
+        top: -29%;
+        left: 52.7%;
+        z-index: 1;
+        @media only screen and (max-width: 576px) {
+            height: 112px;
+            width: 112px;
+            top: -23%;
+            left: 56.5%;
+        }
+        @media only screen and (min-width: 576px) and (max-width: 1300px) {
+            left: 55%;
+        }
+    }
+}
+
+.two-ellipses {
+    position: absolute;
+    left: 40%;
+    top: 156%;
+    @media only screen and (max-width: 576px) {
+        left: 21%;
+        top: 120%;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 1300px) {
+        left: 32%;
+    }
+    .ellipse-white {
+        background-color: $white;
+        width: 272px;
+        height: 272px;
+        @include ellipse;
+        position: absolute;
+        @media only screen and (max-width: 576px) {
+            height: 218px;
+            width: 218px;
+        }
+    }
+    .ellipse-brown {
+        background-color: $ellipse-brown;
+        width: 250px;
+        height: 250px;
+        @include ellipse;
+        position: relative;
+        top: 10px;
+        border: 7px solid $border-grey;
+        @media only screen and (max-width: 576px) {
+            height: 202px;
+            width: 202px;
+        }
+    }
+    .kolik-ockovanych {
+        z-index: 8;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-weight: 700;
+        .v-cr {
+            display: block;
+            font-size: 18px;
+            @media only screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+        .cislo-ockovanych {
+            display: block;
+            font-size: 48px;
+            @media only screen and (max-width: 576px) {
+                font-size: 32px;
+            }
+        }
+        .datum {
+            font-size: 18px;
+            position: relative;
+            @media only screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.box {
+    position: absolute;
+    z-index: 10;
+    left: 166px;
+    bottom: 35px;
+    @media only screen and (max-width: 576px) {
+        left: 141px;
+        bottom: 25px;
+    }
+}
+
+.icon-info {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.icon-info i {
+    color: $yellow;
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.info-span {
+    position: relative;
+    width: 120px;
+    background: rgba($cover-green, 0.9);
+    color: $white;
+    font-weight: 700;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    right: 50px;
+    top: 11px;
+    opacity: 0;
+    transition: 0.6s opacity;
+}
+
+.info-link {
+    color: $yellow;
+    text-decoration: underline;
+    &:hover {
+        color: $red;
+    }
+}
+
+.info-span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    background: $cover-green;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.icon-info:hover>span {
+    opacity: 1;
+}

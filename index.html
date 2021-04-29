@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFORMACE O OČKOVÁNÍ</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid px-0 py-0 my-0 mx-0 cont">
+        <!--Menu pro dekstop-->
+        <div class="navigation">
+            <div class="row">
+                <div class="col-3 informace-o-ockovani text-center">
+                    <p>
+                        <span class="informace">Informace</span>
+                        <span class="o-ockovani">o očkování</span>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-4"></div>
+
+                <div class="col-md-6 col-lg-5 text-lg-center">
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="#" class="menu-a">Často kladěné otázky</a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="#" class="menu-a">Plán očkování</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Menu pro mobil-->
+        <div class="navigation-mob">
+            <div class="row">
+                <div class="col-4 informace-o-ockovani-mob">
+                    <p>
+                        <span class="informace-mob">Informace</span>
+                        <span class="o-ockovani-mob">o očkování</span>
+                    </p>
+                </div>
+                <div class="offset-2 col-3 menu-border">
+                    <div id="menu-bar">
+                        <div id="menu-bar-mob" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav-mob" id="nav-mob">
+                            <li><a href="#">Často kladěné otázky</a></li>
+                            <li><a href="#">Plán očkování</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero image sekce-->
+        <section>
+            <div class="row hero-image px-0 py-0 my-0 mx-0">
+                <div class="col-12 text-center px-0 py-0 my-0 mx-0 col-hero-image align-self-center">
+                    <h1 class="hero-image-text">
+                        <span class="udelejme-tecku">Udělejme tečku</span>
+                        <span class="za-pandemii">za pandemií</span>
+                    </h1>
+                    <div class="ellipse-yellow"></div>
+
+                    <div class="two-ellipses">
+                        <div class="ellipse-white">
+                            <div class="ellipse-brown">
+                                <p class="kolik-ockovanych">
+                                    <span class="v-cr">V ČR již očkováno lidí</span>
+                                    <span class="cislo-ockovanych">1 031 033</span>
+                                    <span class="datum">k 16. 3. 2021 </span>
+                                </p>
+                                <div class="box">
+                                    <div class="icon-info">
+                                        <i class="fa fa-info-circle"> </i>
+                                        <span class="info-span">Více informací najdete na
+                        <a
+                          href="https://www.mzcr.cz/"
+                          target="_blank"
+                          class="info-link"
+                          >www.mzcr.cz</a
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Sekce se zdrojí informací-->
+      <section>
+        <div class="row zdroje-row">
+          <div class="col-12 zdroje-col text-center">
+            <h2 class="zdroje-h">
+              <span class="block-zdroje">Další zdroje ověřených </span
+              ><span class="block-zdroje">informací o koronaviru</span>
+                                        <span class="block-zdroje">a očkování</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-sm-0"></div>
+                                    <div class="col-sm-12 col-md">
+                                        <div class="zdroje text-center">
+                                            <img src="images\covid-portal.png " alt="covid portal " class="logo" />
+                                            <p class="name">Covid portál</p>
+                                            <p class="description">Vládní opatření lidskou řečí.</p>
+                                            <a href="https://covid.gov.cz/ " target="_blank " class="link"><button class="link-button">
+                  Přejít na web
+                  <i class="fa fa-external-link icon-link"></i>
+                </button>
+              </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md">
+                                        <div class="zdroje text-center">
+                                            <img src="images\min-zdrav.png " alt="ministerstvo zdravotnictvi " class="logo" />
+                                            <p class="name">Ministerstvo zdravotnictví</p>
+                                            <p class="description">Aktuálně ke koronaviru.</p>
+                                            <a href="https://koronavirus.mzcr.cz/ " target="_blank " class="link"><button class="link-button">
+                  Přejít na web
+                  <i class="fa fa-external-link icon-link"></i></button
+              ></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md">
+                                        <div class="zdroje text-center">
+                                            <img src="images\min-zdrav.png " alt="ministerstvo zdravotnictvi " class="logo" />
+                                            <p class="name">Centrální registrační systém</p>
+                                            <p class="description">Rezervujte si termín očkování.</p>
+                                            <a href="https://registrace.mzcr.cz/ " target="_blank " class="link"><button class="link-button">
+                  Přejít na web
+                  <i class="fa fa-external-link icon-link"></i></button
+              ></a>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-0"></div>
+                                </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 text-center">
+                    <p class="copyright">
+                        2021 © Ministerstvo zdravotnictví ČR.<span class="prava">Všechna práva vyhrazena.</span
+              >
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-6 text-center footer-links">
+            <a href="#" class="footer-link"
+              ><span>Prohlášení o přístupnosti webových stránek</span></a>
+                        <span class="separator">|</span>
+                        <a href="#" class="footer-link"><span class="ochrana">Ochrana osobních údajů</span></a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>

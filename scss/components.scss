@@ -1,0 +1,15 @@
+$red: #d0384b;
+$yellow: #ffbd16;
+$brown: #636363;
+$black: #3d3d3d;
+$cover-green: rgba(36, 175, 161);
+$white: #ffffff;
+$yellow-info: #f7cb46;
+$ellipse-brown: #7c4341;
+$border-grey: #dadada;
+$background: #e5e5e5;
+$light-black: #434343;
+@mixin ellipse {
+    border-radius: 50%;
+    margin: 0 auto;
+}

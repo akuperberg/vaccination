@@ -1,0 +1,16 @@
+@use 'components.scss' as *;
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $background;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    font-family: Oswald, sans-serif;
+}
